@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RRR Coaching Admission Form</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#eef6ff,#ffffff);
+padding:40px 20px;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+}
+
+.form-card{
+background:#fff;
+border-radius:28px;
+padding:40px;
+box-shadow:0 20px 60px rgba(0,0,0,.08);
+border:1px solid #e8eef8;
+}
+
+.logo{
+text-align:center;
+margin-bottom:30px;
+}
+
+.logo h1{
+font-size:48px;
+font-weight:900;
+color:#0f172a;
+}
+
+.logo p{
+font-size:18px;
+font-weight:600;
+color:#64748b;
+}
+
+.title{
+text-align:center;
+margin-bottom:35px;
+}
+
+.title h2{
+display:inline-block;
+padding:12px 30px;
+border:2px solid #0b63ce;
+border-radius:16px;
+color:#0b63ce;
+font-size:28px;
+}
+
+.section{
+margin-bottom:28px;
+}
+
+.section-title{
+font-size:18px;
+font-weight:700;
+margin-bottom:16px;
+color:#0f172a;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+
+.input-group{
+display:flex;
+flex-direction:column;
+}
+
+.input-group label{
+font-weight:600;
+margin-bottom:8px;
+color:#334155;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+padding:14px;
+border:1px solid #dbe4f0;
+border-radius:12px;
+outline:none;
+font-size:15px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+border-color:#0b63ce;
+}
+
+.full{
+grid-column:1/-1;
+}
+
+textarea{
+resize:none;
+height:110px;
+}
+
+.course-box{
+border:2px dashed #cbd5e1;
+padding:20px;
+border-radius:18px;
+}
+
+.checkbox-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:12px;
+margin-top:15px;
+}
+
+.checkbox-grid label{
+display:flex;
+align-items:center;
+gap:8px;
+font-weight:600;
+}
+
+.photo-upload{
+border:2px dashed #0b63ce;
+padding:20px;
+text-align:center;
+border-radius:16px;
+background:#f7fbff;
+}
+
+.submit-btn{
+width:100%;
+padding:16px;
+border:none;
+background:linear-gradient(135deg,#0b63ce,#1e88ff);
+color:#fff;
+font-size:17px;
+font-weight:700;
+border-radius:14px;
+cursor:pointer;
+margin-top:25px;
+transition:.3s;
+}
+
+.submit-btn:hover{
+transform:translateY(-2px);
+}
+
+.note{
+margin-top:25px;
+font-size:14px;
+color:#475569;
+line-height:1.7;
+}
+
+@media(max-width:768px){
+
+.form-card{
+padding:25px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.checkbox-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.logo h1{
+font-size:34px;
+}
+
+.title h2{
+font-size:22px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="form-card">
+
+<div class="logo">
+<h1>RRR Coaching Center</h1>
+<p>Admission Form</p>
+</div>
+
+<div class="title">
+<h2>પ્રવેશ પત્રક</h2>
+</div>
+
+<form id="admissionForm">
+
+<div class="section">
+
+<div class="grid">
+
+<div class="input-group">
+<label>Admission Date</label>
+<input type="date" name="admission_date" required>
+</div>
+
+<div class="input-group">
+<label>Student Photo</label>
+<input type="file" name="photo">
+</div>
+
+<div class="input-group full">
+<label>વિદ્યાર્થીનું નામ</label>
+<input type="text" name="student_name" required>
+</div>
+
+<div class="input-group">
+<label>જન્મ તારીખ</label>
+<input type="date" name="dob">
+</div>
+
+<div class="input-group">
+<label>શાળા / કોલેજ</label>
+<input type="text" name="school">
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-title">Parent Details</div>
+
+<div class="grid">
+
+<div class="input-group">
+<label>પિતાનું નામ</label>
+<input type="text" name="father_name">
+</div>
+
+<div class="input-group">
+<label>પિતાનો સંપર્ક</label>
+<input type="tel" name="father_contact">
+</div>
+
+<div class="input-group">
+<label>પિતાનો વ્યવસાય</label>
+<input type="text" name="father_occupation">
+</div>
+
+<div class="input-group">
+<label>માતાનું નામ</label>
+<input type="text" name="mother_name">
+</div>
+
+<div class="input-group">
+<label>માતાનો સંપર્ક</label>
+<input type="tel" name="mother_contact">
+</div>
+
+<div class="input-group">
+<label>માતાનો વ્યવસાય</label>
+<input type="text" name="mother_occupation">
+</div>
+
+<div class="input-group full">
+<label>સરનામું</label>
+<textarea name="address"></textarea>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="course-box">
+
+<div class="section-title">Course Selection</div>
+
+<div class="checkbox-grid">
+
+<label><input type="checkbox" name="course" value="Online"> Online</label>
+
+<label><input type="checkbox" name="course" value="Offline"> Offline</label>
+
+<label><input type="checkbox" name="course" value="Std 5"> Std 5</label>
+
+<label><input type="checkbox" name="course" value="Std 6"> Std 6</label>
+
+<label><input type="checkbox" name="course" value="Std 7"> Std 7</label>
+
+<label><input type="checkbox" name="course" value="Std 8"> Std 8</label>
+
+<label><input type="checkbox" name="course" value="Std 9"> Std 9</label>
+
+<label><input type="checkbox" name="course" value="Std 10"> Std 10</label>
+
+<label><input type="checkbox" name="course" value="Std 11"> Std 11</label>
+
+<label><input type="checkbox" name="course" value="Std 12"> Std 12</label>
+
+<label><input type="checkbox" name="course" value="Foundation"> Foundation</label>
+
+<label><input type="checkbox" name="course" value="Scholarship"> Scholarship</label>
+
+<label><input type="checkbox" name="course" value="NMMS"> NMMS</label>
+
+<label><input type="checkbox" name="course" value="CET"> CET</label>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="note">
+હું / અમે જાહેર કરું છું કે ઉપર આપેલ માહિતી સાચી છે અને RRR Coaching Center ના નિયમોનું પાલન કરીશુ.
+</div>
+
+<button type="submit" class="submit-btn">
+Submit Admission Form
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- EmailJS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+emailjs.init("FWst8X-6uJkGBvsHG");
+
+document.getElementById("admissionForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const form=this;
+
+const checkedCourses=[...document.querySelectorAll('input[name="course"]:checked')]
+.map(c=>c.value)
+.join(", ");
+
+const data={
+student_name:form.student_name.value,
+admission_date:form.admission_date.value,
+dob:form.dob.value,
+school:form.school.value,
+
+father_name:form.father_name.value,
+father_contact:form.father_contact.value,
+father_occupation:form.father_occupation.value,
+
+mother_name:form.mother_name.value,
+mother_contact:form.mother_contact.value,
+mother_occupation:form.mother_occupation.value,
+
+address:form.address.value,
+
+courses:checkedCourses
+};
+
+emailjs.send(
+"service_j1ox3jl",
+"template_i0c50vn",
+data
+)
+.then(()=>{
+
+alert("Admission Form Submitted Successfully ✅");
+
+form.reset();
+
+})
+.catch((error)=>{
+
+alert("Something went wrong");
+
+console.log(error);
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
